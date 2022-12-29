@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 import os
 import glob
-import Class.SICXEClass as program
+import Class.SICXEClass as sicxe
 import utilities.HexaAddition as f
 import ErrorClass as Err
 
-def loadMap(prog: program.Program_SICXE, Launch:str):
+def loadMap(prog: sicxe.SICXE, Launch:str):
    print("------------LoadMap-sicxe-------------------------")
   
    DFlist = prog.DFlist
@@ -43,8 +43,8 @@ def loadMap(prog: program.Program_SICXE, Launch:str):
    files = glob.glob('./Res/*')
    for q in files:
      os.remove(q)
-   LMdf.to_excel("Res/loadmap.xlsx")
-   LMdf.to_csv("Res/loadmap.txt",sep="\t")
+   LMdf.to_excel("SICXE/Res/loadmap.xlsx")
+   LMdf.to_csv("SICXE/Res/loadmap.txt",sep="\t")
    print(prog.LoadMap)
 
    return prog
