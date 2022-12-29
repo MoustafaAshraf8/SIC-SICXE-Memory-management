@@ -33,11 +33,9 @@ def loadMap(prog: sic, Launch:str):
       
    LMdf = pd.DataFrame(info,index=rowList,columns=["address","length","end"])
    prog.LoadMap = LMdf
-   # files = glob.glob('./Res/*')
-   # for q in files:
-   #   os.remove(q)
-   LMdf.to_excel("Res/loadmapSIC.xlsx")
-   LMdf.to_csv("Res/loadmapSIC.txt",sep="\t")
+
+   LMdf.to_excel("SIC/Res/loadmapSIC.xlsx")
+   LMdf.to_csv("SIC/Res/loadmapSIC.txt",sep="\t")
    print(prog.LoadMap)
 
    return prog
