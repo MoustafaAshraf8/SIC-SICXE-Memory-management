@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 import glob
-import Class.SICXEClass as sicxe
 import Class.SICclass as sic
 import utilities.HexaAddition as f
 import ErrorClass as Err

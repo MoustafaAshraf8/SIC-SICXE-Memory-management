@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import Class.SICXEClass as sicxe
 import Class.SICclass as sic
 import ErrorClass as Err
 # from pandasgui import show
