@@ -18,4 +18,4 @@ if(Program_type == "1"):
    prog = SICloadmap.loadMap(prog=prog,Launch="4000")
    prog = SICmemory.memorySetup(prog=prog)
    prog = SICmemoryFill.memoryFill(prog=prog)
-   #show(prog.MEMORY)
+   prog.MemoryShow(prog)

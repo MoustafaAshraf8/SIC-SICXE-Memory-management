@@ -5,7 +5,7 @@ import ErrorClass as Err
 # from pandasgui import show
 def parseFile(FilePath):
    print("------------Parser-sic--------------------------")
-   prog = sic
+   prog = sic.SIC
    df = pd.read_csv(FilePath, delimiter='\t',header=None)
    prog.df = df
    DFlist = []

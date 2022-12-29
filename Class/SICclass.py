@@ -1,5 +1,6 @@
 import pandas as pd
-class Program_ABSOLUTE:
+from pandasgui import show
+class SIC:
    df: pd.DataFrame
    DFlist: list
    LoadMap: pd.DataFrame
@@ -10,3 +11,6 @@ class Program_ABSOLUTE:
 
    def printdf(self):
       print(self.df)
+
+   def MemoryShow(self):
+      show(self.MEMORY)
